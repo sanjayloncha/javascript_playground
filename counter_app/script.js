@@ -7,24 +7,32 @@ subBtn.disabled = true ;
 let number = 0 ;
 numberToShow.textContent = number ;
 
-let handleChange = (num)=>{
-    number += num ;
-    if(number>0){
-        subBtn.disabled = false ;
+let handleChange = (op)=>{
+    if(op == "sub"){
+        number = number-1 ;
+        if(number>0){
+            subBtn.disabled = false ;
+            addBtn.disabled = false ;
+        }else{
+            subBtn.disabled = true ;
+        }
+        numberToShow.textContent = number ;
     }else{
-        subBtn.disabled = true ;
+        number = number+1 ;
+        if(number<5){
+            subBtn.disabled = false ;
+            addBtn.disabled = false ;
+        }else{
+            addBtn.disabled = true ;
+        }
+        numberToShow.textContent = number ;
     }
-    if(number<5){
-        addBtn.disabled = false ;
-    }else{
-        addBtn.disabled = true ;
-    }
-    numberToShow.textContent = number ;
+    
 }
 
 subBtn.addEventListener("click",function(){
-    handleChange(-1) ;
+    handleChange("sub") ;
 }) ;
 addBtn.addEventListener("click",function(){
-    handleChange(1) ;
+    handleChange("add") ;
 }) ;
