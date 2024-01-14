@@ -8,7 +8,7 @@ h1,
 .container {
     color: white;
     text-align: center;
-    background-color: blueviolet;
+    background-color: teal;
 }
 
 h1 {
@@ -27,7 +27,7 @@ h1 {
 }
 
 .button_container {
-    background-color: blueviolet;
+    background-color: teal;
     width: 300px;
     margin: auto;
     padding: 15px 0;
