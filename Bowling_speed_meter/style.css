@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    background-color: rebeccapurple;
+    color: white;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+#bar {
+    background-image: linear-gradient(to right, green , yellow,red);
+    width: 50%;
+    height: 5vh;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+#pointer {
+    margin-left: 25%;   
+}
+
+#UserInput {
+    padding: 5px 5px;
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#btn {
+    margin-top: 10px;
+    width: 170px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
