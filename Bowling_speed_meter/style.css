@@ -15,16 +15,13 @@ h1 {
 }
 
 #bar {
-    background-image: linear-gradient(to right, green , yellow,red);
+    background-image: linear-gradient(to right, green, yellow, red);
     width: 50%;
     height: 5vh;
     margin-top: 50px;
     margin-left: 25%;
 }
 
-#pointer {
-    margin-left: 25%;   
-}
 
 #UserInput {
     padding: 5px 5px;
@@ -38,4 +35,23 @@ h1 {
     width: 170px;
     padding: 5px 10px;
     cursor: pointer;
+}
+
+#pointer {
+    margin-left: 25%;
+    animation: moveRight 4s linear 2;
+}
+
+@keyframes moveRight {
+
+    0%{
+        margin-left: 25%;
+    }
+    100% {
+        margin-left: 72.8%;
+    }
+
+    50% {
+        margin-left: 25%;
+    }
 }
