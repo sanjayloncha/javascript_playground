@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+}
+
+#timerContainer {
+    border: 2px solid black;
+    font-size: 22px;
+    width: 400px;
+    margin: 50px auto;
+}
+
+#timerContainer button {
+    background-color: white;
+    padding: 5px 10px;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
